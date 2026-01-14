@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claude AI를 활용한 삼행시 생성기 - 세 글자를 입력하고 재미있는 삼행시를 만들어보세요!">
+    <meta name="keywords" content="삼행시, 삼행시 생성기, Claude AI, 인공지능, 시 생성">
+    <title>삼행시 생성기 - Claude AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>삼행시 생성기</h1>
+            <p class="subtitle">세 글자를 입력하고 재미있는 삼행시를 만들어보세요!</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input
+                    type="text"
+                    id="wordInput"
+                    placeholder="3글자 입력"
+                    maxlength="3"
+                    autocomplete="off"
+                >
+                <button id="generateBtn">삼행시 생성</button>
+            </div>
+
+            <div id="loadingSpinner" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>삼행시 생성 중...</p>
+            </div>
+
+            <div id="resultSection" class="result" style="display: none;">
+                <h2>생성된 삼행시</h2>
+                <div id="resultText"></div>
+            </div>
+
+            <div id="errorSection" class="error" style="display: none;">
+                <p id="errorText"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Claude AI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

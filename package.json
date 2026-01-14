@@ -1,0 +1,15 @@
+{
+  "name": "threeline-generator",
+  "version": "1.0.0",
+  "description": "Claude AI를 활용한 삼행시 생성기",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
